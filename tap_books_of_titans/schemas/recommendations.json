@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "A Tim Ferriss Show Book Recommendation",
+    "description": "Book recommendations from https://www.booksoftitans.com/list.",
+    "default": {},
+    "examples": [
+        {
+            "book": "What Makes Sammy Run",
+            "author": "Budd Schulberg",
+            "recommended_by": "Brian Koppelman",
+            "podcast_number": 10
+        }
+    ],
+    "required": [
+        "book",
+        "author",
+        "recommended_by",
+        "podcast_number"
+    ],
+    "properties": {
+        "book": {
+            "$id": "#/properties/book",
+            "type": "string",
+            "title": "The book schema",
+            "description": "Recommended book title.",
+            "default": "",
+            "examples": [
+                "What Makes Sammy Run"
+            ]
+        },
+        "author": {
+            "$id": "#/properties/author",
+            "type": ["string", "null"],
+            "title": "The author schema",
+            "description": "Author of recommended book.",
+            "default": "",
+            "examples": [
+                "Budd Schulberg"
+            ]
+        },
+        "recommended_by": {
+            "$id": "#/properties/recommended_by",
+            "type": ["string", "null"],
+            "title": "The recommended_by schema",
+            "description": "Name of person who made this book recommendation.",
+            "default": "",
+            "examples": [
+                "Brian Koppelman"
+            ]
+        },
+        "podcast_number": {
+            "$id": "#/properties/podcast_number",
+            "type": ["integer", "null"],
+            "title": "The podcast_number schema",
+            "description": "Tim Ferriss Show podcast episode number.",
+            "default": "",
+            "examples": [
+                10
+            ]
+        }
+    },
+    "additionalProperties": true
+}
