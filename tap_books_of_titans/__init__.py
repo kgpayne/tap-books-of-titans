@@ -25,7 +25,8 @@ SCRAPY_SETTINGS = dict(
     BOT_NAME='books_of_titans_scraper',
     SPIDER_MODULES=['tap_books_of_titans.books_of_titans_scraper.spiders'],
     NEWSPIDER_MODULE='tap_books_of_titans.books_of_titans_scraper.spiders',
-    ROBOTSTXT_OBEY=True
+    ROBOTSTXT_OBEY=True,
+    FEED_EXPORT_ENCODING='utf-8'
 )
 
 
