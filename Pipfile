@@ -5,10 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 flake8 = "*"
-target-csv = "*"
 
 [packages]
 tap-books-of-titans = {editable = true, path = "."}
+target-csv = "*"
 scrapy = "*"
 
 [requires]
